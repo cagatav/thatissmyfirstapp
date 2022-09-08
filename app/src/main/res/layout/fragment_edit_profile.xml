@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    tools:context=".fragment.ProfileFragment"
+    android:background="@drawable/background"
+    android:focusable="true"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_profile1"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/gold"/>
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gold"
+        android:layout_marginTop="45dp"/>
+    <LinearLayout
+        android:id="@+id/formlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_marginHorizontal="140dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/profileico"/>
+        <EditText
+            android:id="@+id/surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/shapebackground"
+            android:drawableStart="@drawable/name"
+            android:drawablePadding="20dp"
+            android:hint="@string/name"
+            android:padding="20dp"
+            android:drawableTint="@color/gold"
+            android:textColorHint="@color/white"
+            />
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/shapebackground"
+            android:drawableStart="@drawable/mail"
+            android:drawablePadding="20dp"
+            android:hint="@string/email"
+            android:padding="20dp"
+            android:drawableTint="@color/gold"
+            android:textColorHint="@color/white"
+            />
+
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/shapebackground"
+            android:drawableStart="@drawable/phone"
+            android:drawablePadding="20dp"
+            android:hint="@string/phone"
+            android:padding="20dp"
+            android:drawableTint="@color/gold"
+            android:textColorHint="@color/white"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/editprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="75dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/shapeloginbutton"
+            android:text="@string/edit_profile"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
+</layout>
